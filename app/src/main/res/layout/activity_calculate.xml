@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_blue"
+    tools:context=".CalculateActivity">
+
+<!--    <LinearLayout-->
+<!--        android:padding="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:src="@drawable/calculate_icon"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="10dp"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Calculate"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <View&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/cal_back"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="back"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:backgroundTint="@color/orange"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content" />&ndash;&gt;-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cal_back"
+            android:src="@drawable/previous_orange"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/calculate_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="Calculate"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@drawable/bg_radius"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:padding="20dp"
+        android:layout_marginRight="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Month :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/input_month"
+                    android:background="@drawable/input_background"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    android:nextFocusForward="@+id/input_watt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:text="Watt used (watt) :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/input_watt"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:hint="1000"
+                    android:nextFocusForward="@+id/input_hour"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:text="Time used (hours) :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/input_hour"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:hint="5"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:text="Electrical Machines :"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/input_iron"
+                        android:src="@drawable/iron"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/material_motion_duration_long_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/input_air"
+                        android:src="@drawable/air_conditioner"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/material_motion_duration_long_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/input_fan"
+                        android:src="@drawable/fan"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/input_fridge"
+                        android:src="@drawable/fridge"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/material_motion_duration_long_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/input_light"
+                        android:src="@drawable/light_bulb"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/material_motion_duration_long_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/input_micro"
+                        android:src="@drawable/oven"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/input_rice"
+                        android:src="@drawable/rice_cooker"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/material_motion_duration_long_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/input_tv"
+                        android:src="@drawable/television"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="@integer/material_motion_duration_long_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/input_washing"
+                        android:src="@drawable/washing_machine"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_cal"
+                    android:text="Calculate"
+                    android:textSize="17dp"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/black1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ElectricityBillCalculator</string>
+    <string name="web_client_id">80585023322-mh8v9327tni2qrrchj8pkqgcak7951dp.apps.googleusercontent.com</string>
+    <string-array name="month_list">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>

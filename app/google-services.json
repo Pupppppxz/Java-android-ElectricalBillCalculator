@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "80585023322",
+    "firebase_url": "https://electricalcalculator-176d9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "electricalcalculator-176d9",
+    "storage_bucket": "electricalcalculator-176d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80585023322:android:b18bac3edcf8d95d359d63",
+        "android_client_info": {
+          "package_name": "com.example.electricitybillcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80585023322-mh8v9327tni2qrrchj8pkqgcak7951dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM7sDRDElk3TvyO2VqCiIAaA1Bk8ditaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80585023322-3f2qgfeph6t41ho0ci6ub4i23esn16oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

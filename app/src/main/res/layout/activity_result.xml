@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_blue"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/baht"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="Result"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@drawable/bg_radius"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:padding="20dp"
+        android:layout_marginRight="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Value :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/result_price"
+                        android:text="200"
+                        android:textSize="40dp"
+                        android:textColor="@color/black1"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:src="@drawable/baht_coin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Unit used :"
+                    android:textSize="20dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/result_unit"
+                        android:text="80"
+                        android:textSize="40dp"
+                        android:textColor="@color/black1"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Electrical Machine :"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/result_icon"
+                        android:src="@drawable/iron"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_two_layer_orange"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:text="SAVE!"
+                    android:textSize="17dp"
+                    android:backgroundTint="@color/sky_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button_cancel"
+                    android:text="CANCEL!"
+                    android:textSize="17dp"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
